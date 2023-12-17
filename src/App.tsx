@@ -8,14 +8,15 @@ const App = () => {
     "London",
     "Paris"
 ];
+
+const handleSelectItem = (item: string) => {
+  console.log(item)
+}
   return <div>
     <ListGroup 
-      items={["NY",
-        "San Francisco",
-        "Tokyo",
-        "London",
-        "Paris"]} 
+      items={items} 
       heading={"Cities"}
+      onSelectItem={handleSelectItem}
         />
   </div>
 }
