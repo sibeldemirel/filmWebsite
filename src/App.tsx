@@ -1,4 +1,7 @@
 import ListGroup from "./components/ListGroup";
+import Alerte from "./components/Alerte";
+import { Button } from "./components/Button";
+
 
 const App = () => {
   let items = [
@@ -18,6 +21,10 @@ const handleSelectItem = (item: string) => {
       heading={"Cities"}
       onSelectItem={handleSelectItem}
         />
+    <Alerte>
+      Hello <span>YOU</span> !
+    </Alerte>
+    <Button color="danger" onclick={()=>console.log("click")}>Did it again</Button>
   </div>
 }
 
