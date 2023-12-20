@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 interface Props {
     children: ReactNode;
-    color?: 'secondary' | 'danger' | 'primary'; //you can only set one of these values
+    color?: 'secondary' | 'danger' | 'primary'; //you can only set one of these
     onclick: () => void;
 }
 
